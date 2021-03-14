@@ -1,31 +1,31 @@
 <template>
-  <div class="container">
-    <div class="row">
-        <Login/>
+  <div class="mx-auto">
+    <div class="m-2 row">
+      <Login />
+      <ModEvent />
+      <EventList />
     </div>
   </div>
 </template>
 
 <script>
-import Login from './components/Login.vue'
+import Login from "./components/Login.vue";
+import EventList from "./components/EventList.vue";
+import ModEvent from "./components/ModEvent.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Login
-  }
-}
+    Login,
+    EventList,
+    ModEvent,
+  },
+};
 </script>
 
 <style>
-#app {
-  padding-top: 100px;
-  padding-bottom: 100%;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #6200ee;
-  background: linear-gradient(to right, #CE93D8, #CCFFC8);
+@import url("https://fonts.googleapis.com/css?family=Anton");
+h1 {
+  font-family: "Anton", sans-serif;
 }
 </style>
